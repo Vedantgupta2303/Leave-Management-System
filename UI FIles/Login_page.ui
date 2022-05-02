@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Login_Page</class>
+ <widget class="QMainWindow" name="Login_Page">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(233, 239, 192);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>-820</x>
+      <y>0</y>
+      <width>1621</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(78, 148, 79);</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Faculty_login_btn">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>120</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+font: italic 14pt &quot;Goudy Old Style&quot;;
+background-color: rgb(78, 148, 79);
+color:rgb(255,255,255);
+border: 1px solid;
+border-radius: 15px;
+border-style : inset;
+}
+QPushButton:hover {
+
+background-color: rgb(233, 239, 192);
+color: rgb(0,0,0);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Faculty Login</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Admin_login_btn">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>120</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+font: italic 14pt &quot;Goudy Old Style&quot;;
+background-color: rgb(78, 148, 79);
+color:rgb(255,255,255);
+border: 1px solid;
+border-radius: 15px;
+border-style : inset;
+}
+QPushButton:hover {
+
+background-color: rgb(233, 239, 192);
+color: rgb(0,0,0);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Admin Login</string>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>200</y>
+      <width>801</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="Faculty_Login_page">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>10</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: italic 18pt &quot;Goudy Old Style&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Faculty Login</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>80</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: italic 18pt &quot;Goudy Old Style&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Username</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>130</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: italic 18pt &quot;Goudy Old Style&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Password</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Fac_user_edt">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>90</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+font: 75 14pt &quot;Goudy Old Style&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Fac_password_edt">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>140</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+font: 75 14pt &quot;Goudy Old Style&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="log_btn_fac">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>210</y>
+        <width>181</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+font: italic 14pt &quot;Goudy Old Style&quot;;
+background-color: rgb(78, 148, 79);
+color:rgb(255,255,255);
+border: 1px solid;
+border-radius: 15px;
+border-style : inset;
+}
+QPushButton:hover {
+
+background-color: rgb(233, 239, 192);
+color: rgb(0,0,0);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Login</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Admin_login_page">
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>20</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: italic 18pt &quot;Goudy Old Style&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Admin Login</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="admin_password_edt">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>140</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+font: 75 14pt &quot;Goudy Old Style&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>140</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: italic 18pt &quot;Goudy Old Style&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Password</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="admin_user_edt">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>100</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+font: 75 14pt &quot;Goudy Old Style&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>90</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: italic 18pt &quot;Goudy Old Style&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Username</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="log_btn_admin">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>220</y>
+        <width>181</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+font: italic 14pt &quot;Goudy Old Style&quot;;
+background-color: rgb(78, 148, 79);
+color:rgb(255,255,255);
+border: 1px solid;
+border-radius: 15px;
+border-style : inset;
+}
+QPushButton:hover {
+
+background-color: rgb(233, 239, 192);
+color: rgb(0,0,0);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Login</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>801</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(78, 148, 79);
+font:18pt &quot;Goudy Old Style&quot;;
+font: 75 26pt &quot;Goudy Old Style&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>LEAVE MANAGEMENT SYSTEM</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Reg_btn">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>120</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+font: italic 14pt &quot;Goudy Old Style&quot;;
+background-color: rgb(78, 148, 79);
+color:rgb(255,255,255);
+border: 1px solid;
+border-radius: 15px;
+border-style : inset;
+}
+QPushButton:hover {
+
+background-color: rgb(233, 239, 192);
+color: rgb(0,0,0);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Register</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
