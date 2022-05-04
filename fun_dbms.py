@@ -43,8 +43,8 @@ class Database:
         mycursor = self.conn.cursor()
         sql = "INSERT INTO reg_details (FirstName,LastName,Age) VALUES (%s,%s,%s)"
         val = (FirstName,LastName,Age)
-		mycursor.execute(sql,val)
-		return True
+        mycursor.execute(sql,val)
+        return True
     
 
 

@@ -8,11 +8,11 @@ from PySide2.QtWidgets import *
 
 from UI_Frontend.dashboard import Ui_Dashboard_fac_page
 class Dashboard_window:
-    def __init__(self):
+    def __init__(self,details):
         self.main_win = QMainWindow()
         self.ui = Ui_Dashboard_fac_page()
         self.ui.setupUi(self.main_win)
-        self.ui.Name_lbl.setText()
+        self.details = details
         
     def show(self):
         self.main_win.show()
